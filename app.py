@@ -215,6 +215,7 @@ def health():
             'documents_count': 0,
             'openai_configured': bool(os.getenv('OPENAI_API_KEY'))
         }), 500
+
     
 @app.route('/check_form', methods=['POST'])
 def check_form():
