@@ -196,10 +196,29 @@ def index():
     </body>
     </html>
     ''')
-
+@app.route('/health')
+def health():
+    """"Äpi tervise kontroll"""
+    try:
+        stats = vector_db.get_stats()
+        return jsonify({
+            'status': 'healthy',
+            'database_ready': stats['total_documents'] > 0,
+            'documents_count': stats['total_documents'],
+            'openai_configured': bool(os.getenv('OPENAI_API_KEY'))
+        })
+    except Exception as e:
+        return jsonify({
+            'status': 'error',
+            'error': str(e),
+            'database_ready': False,
+            'documents_count': 0,
+            'openai_configured': bool(os.getenv('OPENAI_API_KEY'))
+        }), 500
+    
 @app.route('/check_form', methods=['POST'])
 def check_form():
-    """Hindan vormi"""
+    """Alustan vormi hindamist"""
     try:
         # Проверяем наличие файла
         if 'file' not in request.files:
@@ -308,98 +327,16 @@ Lisasoovitus: Kustutada vormis esinevad kaldkirjas kommentaarid (nt „kui õppe
             
             return jsonify({
                 'analysis': analysis,
-                'similar_docs_count': len(similar_docs)
+                'similar_docs_count': similar_docs_count
             })
             
-        finally:
-            # Удаляем временный файл
-            try:
-                os.unlink(tmp_file_path)
-            except Exception as e:
-                print(f"Не удалось удалить временный файл: {e}")
-    
-    except Exception as e:
-        # Логируем полную ошибку для отладки
-        print(f"Ошибка в check_form: {e}")
-        traceback.print_exc()
-        
-        # Возвращаем понятное сообщение пользователю
-        error_message = str(e)
-        if "API" in error_message:
-            error_message = "Viga OpenAI API-ga suhtlemisel"
-        elif "file" in error_message.lower():
-            error_message = "Viga faili töötlemisel"
-        else:
-            error_message = "Tehniline viga vormi hindamisel"
-        
-        return jsonify({'error': error_message}), 500
-
-@app.route('/setup_database', methods=['POST'])
-def setup_database():
-    """Настройка базы данных с референсными документами"""
-    try:
-        reference_docs_folder = os.getenv('REFERENCE_DOCS_FOLDER', './reference_docs')
-        
-        if not os.path.exists(reference_docs_folder):
-            return jsonify({'error': f'Kausta {reference_docs_folder} ei leitud'}), 400
-        
-        # Получаем список файлов
-        files = [f for f in os.listdir(reference_docs_folder) 
-                if f.endswith(('.pdf', '.txt'))]
-        
-        if not files:
-            return jsonify({'error': 'Viitedokumente ei leitud kaustas'}), 400
-        
-        # Обрабатываем документы
-        documents = doc_processor.process_reference_documents(reference_docs_folder)
-        
-        if not documents:
-            return jsonify({'error': 'Dokumentide töötlemine ei õnnestunud'}), 500
-        
-        # Очищаем старую базу данных
-        vector_db.clear_database()
-        
-        # Добавляем документы в базу данных
-        success_count = 0
-        for doc in documents:
-            if vector_db.add_document(doc['text'], doc):
-                success_count += 1
-        
-        # Сохраняем базу данных
-        vector_db.save_database()
-        
-        return jsonify({
-            'message': f'Andmebaas on edukalt seadistatud. Töödeldud {success_count} dokumenti.',
-            'processed_files': files,
-            'total_chunks': success_count
-        })
+        except Exception as e:
+            return jsonify({'error': f'Viga OpenAI API kutsumisel: {str(e)}'}), 500
         
     except Exception as e:
-        print(f"Ошибка настройки базы данных: {e}")
-        traceback.print_exc()
-        return jsonify({'error': f'Viga andmebaasi seadistamisel: {str(e)}'}), 500
-
-@app.route('/health')
-def health_check():
-    """Проверка состояния системы"""
-    try:
-        stats = vector_db.get_stats()
-        return jsonify({
-            'status': 'OK',
-            'database_stats': stats,
-            'openai_configured': bool(openai.api_key)
-        })
-    except Exception as e:
-        return jsonify({'status': 'ERROR', 'error': str(e)}), 500
+        print(f"Ошибка при обработке файла: {e}")
+        return jsonify({'error': 'Viga vormi töötlemisel'}), 500
 
 if __name__ == '__main__':
-    print("🚀 Запуск Flask приложения...")
-    print(f"📁 Папка для загрузок: {app.config['UPLOAD_FOLDER']}")
-    print(f"📚 Папка с референсными документами: {os.getenv('REFERENCE_DOCS_FOLDER', './reference_docs')}")
-    
-    if openai.api_key:
-        print("✅ OpenAI API ключ настроен")
-    else:
-        print("❌ OpenAI API ключ НЕ настроен - необходимо установить OPENAI_API_KEY")
-    
-    app.run(debug=True, host='0.0.0.0', port=5000)
+    port = int(os.environ.get('PORT', 5000))
+    app.run(host='0.0.0.0', port=port, debug=False)
