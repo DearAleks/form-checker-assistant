@@ -1,0 +1,48 @@
+﻿Mikrokvalifikatsiooniõppekava koostamise põhimõtted
+Aluseks TäKS ja Täienduskoolituse standard
+1. Õppekava nimetus 
+• Nimetus peab väljendama selgelt õppe sisu ning ei tohi olla eksitav.  
+• Ainult ametinimetuse kasutamine ei ole piisav. 
+• Õppekava nimetuses ei ole sobiv kasutada mõisteid “koolitus” ja “mikrokraad” nt “Täiskasvanute koolitaja mikrokraad”. 
+• Näide sobivast nimetusest “Täiskasvanute koolitaja väljaõpe” või “Täiskasvanute õppimise toetamine”.
+2. Õppekava liik: mikrokvalifikatsioon või mikrokraad. 
+• Rakenduskõrgkoolid ja ülikoolid võivad nimetada mikrokvalifikatsiooni mikrokraadiks, kui kõrghariduse õppeained moodustavad mikrokraadi õppekava mahust vähemalt poole. Mikrokraadiks saab mikrokvalifikatsiooni nimetada ainult juhul, kui vähemalt 50% õppekava mahust moodustavad kõrghariduse õppeained.
+• Õppekavas peab olema võimalik aru saada, et vastavus mikrokraadi tingimustele on olemas.
+3. Õppekavarühm määratakse vastavalt ISCED-i liigitusele. Abimaterjalina saab kasutada ISCED. 
+• Õppekavarühmad on toodud haridus- ja teadusministri määruse “Täienduskoolituse standard” lisas arvestades haridus- ja teadusministri määruses “Täienduskoolitusasutuse õppekavarühma kvaliteedi hindamise tingimused ja kord” lisaga.
+• Mikrokvalifikatsiooniõppes ei saa kasutada interdistsiplinaarseid õppekavarühmasid. 
+• Õppekavarühma liigitamisel lähtutakse õppe sisust. Sihtrühm, kellele õpe on suunatud, on pigem teisejärguline. Vajalik on mõista õppekava sisu, eesmärki, õpiväljundeid.
+• Ainult õppekava nimetuse järgi liigitamine on eksitav.
+• Tasemeõppe õppeasutustel peab olema vastavas õppekavarühmas või - grupis õppeõigus. EHIS kontrollib õppeõiguse olemasolu. 
+• Kui õppeõigust vastavas õppekavarühmas ei ole, siis tuleb õppeasutusel läbida kvaliteedihindamine või pakkuda seda õppekava täienduskoolitusena.
+4. Mikrokvalifikatsiooni õppe maht määratakse ainepunktides AP). 1 AP=26 tundi õppija tööd (s.o. astronoomiline tund). 
+4.1. Mikrokvalifikatsiooniõppe maht jääb vahemikku 5-30 AP.
+4.2. Õppe kogumahus eristatakse kontaktõppe ja iseseisva töö maht, mida võib arvestada AP-des, tundides või protsentuaalselt. 
+4.3. Läbivalt tuleb jälgida, et õppe mahu arvestus oleks õppekavas välja toodud ühtsetel alustel, arvestades mikrokvalifikatsiooniõppe mahu määramise põhimõtteid. 
+4.4. Õppekavas ei saa õppemahu määramisel kasutada võrdsel alusel tundi ja akadeemilist tundi.
+5. Õppekava koostamise alus: kui õppekava on koostatud formaalõppe õppekava, kutsestandardi või mõne muu riiklikult kehtestatud standardi alusel, siis tuleb viidata vastavale õppekavale ja selle moodulile või õppeainele, vastavale standardile ja kompetentsidele.
+• Levinud viga on, et õppekava koostamisel t kompetentside ja sisu vahel puudub selge seos. See tähendab, et õppekavas küll viidatakse kutsestandardile või õppeainele, kuid ei ole aru saada, kuidas konkreetne õpe aitab neid kompetentse arendada või saavutada.
+6. Kui õppekava tugineb osaliselt või täielikult kutsestandardile või on koostatud kõrghariduse või kutsehariduse õppekava alusel, siis tuleb õppekavas välja tuua ka EKR (Eesti Kvalifikatsiooniraamistiku tase). 
+7. Õppekava eesmärk ja õpiväljundid.
+7.1. Eesmärk sõnastatakse õppijast lähtuvalt, mida õppija õppekava läbides omandab, millise tulemuse õppekava läbimine annab. Hea eesmärk vastab küsimusele: mida õppija õppe lõpuks oskab teha.
+7.2. Õpiväljundid on kirjeldatud õppekava läbimiseks vajalikul miinimumtasemel. Õpiväljundid sõnastatakse nii, et nende omandamist on võimalik hinnata.
+7.3. Iga õpiväljund peaks olema seotud vähemalt ühe hindamiskriteeriumiga.
+8. Õppe sisu ja õppemeetodid: õppe sisu on soovitav välja tuua moodulitena. Kui õppekava koosneb tasemeõppe õppeainetest, siis tuua mooduli juures välja ka selle mooduli õppekava kood. Õppemeetodid võib lahti kirjutada iga mooduli juures või tuua eraldi välja õppekavaüleselt.
+9. Õppekeskkonna kirjeldus
+Kirjeldatakse, kus ja kuidas õppetöö toimub:
+• kas füüsilises ruumis, veebis või hübriidõppes;
+• millised vahendid, tehnilised lahendused või keskkonnad on kasutusel;
+• kas on olemas õppekeskkonnale ligipääsetavus, tehniline tugi;
+10. Lõpetamise tingimused ja lõpudokumentide väljastamine. 
+• Lõpetamise tingimuseks on õppekava läbimine ja õpiväljundite omandamine.
+• Tingimused peavad olema selged ja mõõdetavad.
+• Mikrokvalifikatsiooniõppe lõpetamisel väljastatakse õppijale mikrokvalifikatsioonitunnistus. Võib õppekvas nimetada ka lihtsalt tunnistus. Ja viidata läbitud mikrokvalifikatsiooniõppe õppekavale.
+• Kui õppekava täies mahus ei läbita, siis mikrokvalifikatsiooni tõendit seadusandluse ei sätesta ja seda väljastada ei saa.  Võimalik on väljastada täienduskoolituse tunnistus, kui õppekava koosneb moodulitest või kõrghariduse õppeainetest, mille igal osal on eraldi õpiväljundid  ja hindamine ja osaleja on need edukalt läbinud. 
+11. Hindamismeetodid ja –hindamiskriteeriumid
+• Hindamismeetod kirjeldab, kuidas hinnatakse õppija teadmisi ja oskust, näiteks test, praktiline töö,[AT1] eneseanalüüs, suuline esitlus jne.
+• Hindamiskriteeriumid määravad, millised on nõuded, et lugeda sooritus vastavaks õpiväljundile.
+12. Koolitaja kvalifikatsioon. 
+• Õppekavas peab olema kirjeldatud, milline on sobilik õpi- ja töökogemus antud õppe läbiviimiseks. 
+• Täiskasvanute koolitajal peavad olema koolitatavas valdkonnas erialased ja täiskasvanute koolitaja kompetentsid. Nõutud kompetentside kirjeldus võib olla üldistav. 
+• Koolitajate nimesid ei pea õppekavas välja tooma, kuna nad võivad ajas muutuda. 
+[AT1]Kutsehariduse komisjonis nägime juhtumit, kus hindamismeetodina ei olnud praktiline töö piisav, nõuti, et selle sisu oleks lahti kirjutatud. Seisukohad on erinevad.
